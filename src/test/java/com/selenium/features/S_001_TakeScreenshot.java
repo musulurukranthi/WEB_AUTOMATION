@@ -41,6 +41,7 @@ public class S_001_TakeScreenshot {
 		WebElement lgnBtnWaited =  wait.until(ExpectedConditions.elementToBeClickable(lgnBtn));
 		lgnBtnWaited.click();
 		
+		// ###########  Screen Shot Code ####################################
 		File dashboard = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(dashboard, new File("./Screenshots/Dashboard.png"));
 		
